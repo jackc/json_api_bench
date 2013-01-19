@@ -16,13 +16,13 @@ PostgreSQL, siege
 
 * Concise auto-complete word search - Returns first 10 words matching search term. This scenario is an example of a very simple, feather weight API call that returns only an array of 10 strings.
 * Rich auto-complete word search - Returns first 10 words matching search term with text, pronunciation, part of speech, and first definition. This is a light weight example that involves two entity types.
-* Word definition - Shows the definition(s), quote(s), and related words for the specified word. This is a middle weight example.
+* Word definition - Shows the definitions, quotes, and related words for the specified word. This is a middle weight example.
 
 # Running the Benchmarks
 
 To setup the test data run the following rake tasks:
 
-    RAILS_ENV=production rake db:create db:migrate benchmark:setup
+    rake db:create db:migrate benchmark:setup
 
 Start the server:
 
@@ -30,4 +30,4 @@ Start the server:
 
 Run the benchmark rake task:
 
-    RAILS_ENV=production rake benchmark:run
+    rake benchmark:run

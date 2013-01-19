@@ -1,3 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: json_api_bench
+
 production:
   adapter: postgresql
   encoding: unicode
