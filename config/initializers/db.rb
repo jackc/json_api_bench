@@ -1,0 +1,1 @@
+DB = ActiveRecord::Base.connection
