@@ -17,8 +17,13 @@ PostgreSQL, siege
 * Concise auto-complete word search - Returns first 10 words matching search term. This scenario is an example of a very simple, feather weight API call that returns only an array of 10 strings.
 * Rich auto-complete word search - Returns first 10 words matching search term with text, pronunciation, part of speech, and first definition. This is a light weight example that involves two entity types.
 * Word definition - Shows the definitions, quotes, and related words for the specified word. This is a middle weight example.
+* Many word definitions - Shows the definitions, quotes, and related words for many words at a time. This is representative of a heavy weight JSON API.
 
 # Running the Benchmarks
+
+Bundle dependencies:
+
+    bundle install
 
 To setup the test data run the following rake tasks:
 

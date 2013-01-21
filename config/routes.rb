@@ -9,4 +9,7 @@ JsonApiBench::Application.routes.draw do
 
   get 'definition/domain' => 'definition#domain'
   get 'definition/postgresql' => 'definition#postgresql'
+
+  get 'many_definitions/domain' => 'many_definitions#domain'
+  get 'many_definitions/postgresql' => 'many_definitions#postgresql'
 end
