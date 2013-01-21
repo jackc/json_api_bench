@@ -31,9 +31,4 @@ class QuickSearchController < ApplicationController
 
     render json: DB.select_value(sql)
   end
-
-  def siege
-    query_texts = Word.order('random()').limit(200).pluck('left(text, 3)')
-    render text: query_texts.map { |q| url_for controller: 'quick_search', action: params[:type], word: q }.join("\n")
-  end
 end
