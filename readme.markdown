@@ -1,6 +1,6 @@
 # JSON API Benchmark
 
-This application is a sample benchmark for various approaches to generating JSON API responses. It exercises the entire application stack instead of just JSON generation so that the timing can be viewed in the context of the entire application. It uses unicorn with 4 worker processes. It typically tests three approaches:
+This application is a sample benchmark for various approaches to generating JSON API responses. It was written to accompany [this post](http://blog.hashrocket.com/posts/faster-json-generation-with-postgresql) about PostgreSQL JSON generation on the [Hashrocket blog](http://blog.hashrocket.com/). It exercises the entire application stack instead of just JSON generation so that the timing can be viewed in the context of the entire application. It uses unicorn with 4 worker processes. It typically tests three approaches:
 
 * Standard Rails - to_json on model objects
 * Optimized Rails - pluck and select_all
