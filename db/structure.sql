@@ -3,6 +3,7 @@
 --
 
 SET statement_timeout = 0;
+SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SET check_function_bodies = false;
@@ -316,6 +317,8 @@ ALTER TABLE ONLY word_relationships
 -- PostgreSQL database dump complete
 --
 
+SET search_path TO "$user",public;
+
 INSERT INTO schema_migrations (version) VALUES ('20130114233033');
 
 INSERT INTO schema_migrations (version) VALUES ('20130114233931');
@@ -323,3 +326,4 @@ INSERT INTO schema_migrations (version) VALUES ('20130114233931');
 INSERT INTO schema_migrations (version) VALUES ('20130114234642');
 
 INSERT INTO schema_migrations (version) VALUES ('20130114235036');
+
