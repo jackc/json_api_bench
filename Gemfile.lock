@@ -107,6 +107,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -117,3 +118,4 @@ DEPENDENCIES
   rails (= 4.2.1)
   terminal-table
   unicorn
+  yajl-ruby
