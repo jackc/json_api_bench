@@ -31,4 +31,14 @@ class QuickSearchController < ApplicationController
 
     render json: DB.select_value(sql)
   end
+
+  def surus
+    json = Word
+      .where('text like ?', "#{params[:word]}%")
+      .order('text asc')
+      .limit(10)
+      .all_json(columns: %i[text])
+
+    render json: json
+  end
 end

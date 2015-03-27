@@ -60,4 +60,21 @@ class DefinitionController < ApplicationController
 
     render json: DB.select_value(sql)
   end
+
+  def surus
+    json = Word
+      .where(text: params[:word])
+      .limit(1)
+      .all_json(
+        columns: %i[text pronunciation],
+        include: {
+          definitions: { columns: %i[part_of_speech body]},
+          quotes:      { columns: %i[body source]},
+          synonyms:    { columns: %i[text]}
+
+        }
+      )
+
+    render json: json
+  end
 end

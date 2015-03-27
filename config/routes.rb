@@ -2,6 +2,7 @@ JsonApiBench::Application.routes.draw do
   get 'quick_search/domain' => 'quick_search#domain'
   get 'quick_search/pluck' => 'quick_search#pluck'
   get 'quick_search/postgresql' => 'quick_search#postgresql'
+  get 'quick_search/surus' => 'quick_search#surus'
 
   get 'rich_search/domain' => 'rich_search#domain'
   get 'rich_search/select_all' => 'rich_search#select_all'
